@@ -14,6 +14,7 @@ public class MyApp implements CommandLineRunner {
         System.out.println("The subtraction is: " + calculator.subtract(1,2));
         System.out.println("The multiplication is: " + calculator.multiply(1,2));
         System.out.println("The division is: " + calculator.divide(1,2));
+        System.out.println("This ends the test!");
 
     }
 }
