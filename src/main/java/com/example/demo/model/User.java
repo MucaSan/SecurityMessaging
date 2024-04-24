@@ -1,9 +1,6 @@
 package com.example.demo.model;
-
 import org.springframework.stereotype.Component;
-
 import java.sql.Date;
-
 @Component
 public class User {
     private Integer id;
@@ -16,7 +13,6 @@ public class User {
         this.password = password;
         this.timeCreated = timeCreated;
     }
-
     public Integer getId() {
         return id;
     }
@@ -36,15 +32,9 @@ public class User {
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public Date getTimeCreated() {
-        return timeCreated;
-    }
-
     public void setTimeCreated(Date timeCreated) {
         this.timeCreated = timeCreated;
     }
