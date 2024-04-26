@@ -1,11 +1,18 @@
 package com.example.demo.model;
+import jakarta.persistence.*;
 import org.springframework.stereotype.Component;
 import java.sql.Date;
-@Component
+@Entity
+@Table(name="tbUsers")
 public class User {
+    @Id
+    @Column(name="id")
     private Integer id;
+    @Column(name="username")
     private String username;
+    @Column(name="password")
     private String password;
+    @Column(name="timeCreated")
     private Date timeCreated;
     public User(Integer id, String username, String password, Date timeCreated){
         this.id = id;
