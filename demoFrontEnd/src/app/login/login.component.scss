@@ -1,15 +1,70 @@
-.login-page{
-    font-size: 2vw;
+body{
+    background-image: url('/assets/images/hacker.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
-
 h1{
-    color: red;
+    color: lightgreen;
+    z-index: 1;
 }
 #login-container{
-    width: 26.5vw;
-    background: grey; 
+    z-index: 1;
+    width: 25vw;
+    background-color: rgba(0,0,0,0.5);
+    height: 50vh;
 }
 
+#username, #password {
+    border-radius:7%;
+    height: 3vh;
+}
+label[for="username"], label[for="password"] {
+    font-size: 2.2vh;
+}
+
+input, button{
+    width: 10vw;
+    font-size: 2.2vh;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    position: relative;
+    top: 6vh;
+    right: 2vw;
+}
+#sign-up-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-container-elements{
+    margin-right: 1vw;  
+    color: white;
+}
+.placeholder{
+    transition: 0.3s;
+    pointer-events: none;
+}
 #sign-up{
-    margin-right: 4vw;
+    font-weight: bold;
+    color: lightgreen;
+    text-decoration: underline;
+}
+input:hover + p{
+    color: red;
+}
+p{
+    transition: 3s;
 }
