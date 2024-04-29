@@ -1,9 +1,15 @@
 package com.example.demo.model;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 import java.sql.Date;
 @Entity
+@Data
 @Table(name="tbUsers")
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     @Column(name="id")
@@ -14,12 +20,6 @@ public class User {
     private String password;
     @Column(name="timeCreated")
     private Date timeCreated;
-    public User(Integer id, String username, String password, Date timeCreated){
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.timeCreated = timeCreated;
-    }
     public Integer getId() {
         return id;
     }
@@ -32,6 +32,9 @@ public class User {
         return username;
     }
 
+    public Date getTimeCreated() {
+        return timeCreated;
+    }
     public void setUsername(String username) {
         this.username = username;
     }

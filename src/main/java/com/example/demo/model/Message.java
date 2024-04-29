@@ -4,9 +4,15 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 @Entity
 @Table(name="tbMessages")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Message {
     @Id
     private Integer id;
@@ -14,11 +20,6 @@ public class Message {
     private String title;
     @Column(name="body")
     private String body;
-    public Message(Integer id,String title, String body){
-        this.id = id;
-        this.title = title;
-        this.body = body;
-    }
     public Integer getId() {
         return id;
     }
