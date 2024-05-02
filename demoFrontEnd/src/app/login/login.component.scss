@@ -24,6 +24,7 @@ body{
 }
 h1{
     color: lightgreen;
+    font-size: 2vw;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -54,7 +55,7 @@ form{
 }
 .layer2{
     position:absolute;
-    width: 6vw;
+    width: 5.4vw;
     height: 2.5px;
     border-radius: 3px;
     background-color: white;
@@ -79,7 +80,7 @@ input, button{
 }
 #username:focus + label[for="username"], #password:focus + label[for="password"]{
     color: rgb(117, 192, 117);
-    font-size: 2vh;
+    font-size: 1.1vw;
     font-weight: bold;
     top: 1.9vh;
     right: 3.44vw; 
@@ -89,8 +90,11 @@ input, button{
     border: 3px solid lightgreen;
 }
 label[for="username"], label[for="password"] {
-    font-size: 2.2vh;
+    font-size: 1.1vw;
     
+}
+label[for="password"]{
+    padding-right: 5px;
 }
 
 label{
@@ -115,6 +119,7 @@ label{
     pointer-events: none;
 }
 #sign-up-container{
+    width:10vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -122,18 +127,44 @@ label{
 }
 
 .sign-up-container-elements{
-    margin-right: 1vw;  
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right:1.6vw;  
     color: white;
 }
 
 p{
-    font-size: 1.5vh;
+    
+    font-size: 1vw;
+    top: 0;
+    left: 0;
+    font-size: 0.8vw;
+    margin-right: 0;
 }
 #sign-up{
     font-weight: bold;
     color: lightgreen;
     text-decoration: underline;
+    margin-right: 2px;
+    font-size: 1vw;
+    
 }
+
+@media(min-width:1280px) and (min-height: 720px){
+    p{
+        font-size: 0.8vw;
+        margin-right: 0;
+    }
+    #sign-up{
+        margin-right: 2px;
+        font-size: 0.95vw;
+    }
+}
+
+
 
 
 
