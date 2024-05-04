@@ -164,6 +164,41 @@ p{
     }
 }
 
+@media (min-width: 810px) and (min-height: 1080px) {
+    body{
+        background-image: none;
+    }
+    #login-container {
+        width: 100vw;
+        background-color: rgba(50,50,50);
+        height: 100vh;
+    }
+    input, button{
+        width: 20vw;
+    }
+    label[for="username"], label[for="password"] {
+        font-size: 2.2vw;
+        
+    }
+    p{
+        bottom: 100%;
+        font-size: 1vw;
+        padding-left: 15px;
+        padding-right: 10px;
+        margin-right: 20px;
+        
+    }
+    #sign-up{
+        font-size: 1vw;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    #sign-up-container{
+        margin:0;
+    }
+
+}
+
 
 
 
