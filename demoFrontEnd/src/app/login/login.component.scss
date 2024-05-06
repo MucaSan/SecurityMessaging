@@ -152,8 +152,7 @@ p{
     font-size: 1vw;
     
 }
-
-@media(min-width:1280px) and (min-height: 720px){
+@media(min-width: 1280px){
     p{
         font-size: 0.8vw;
         margin-right: 0;
@@ -163,8 +162,7 @@ p{
         font-size: 0.95vw;
     }
 }
-
-@media (min-width: 810px) and (min-height: 1080px) {
+@media (max-width: 1000px) {
     body{
         background-image: none;
     }
@@ -173,30 +171,117 @@ p{
         background-color: rgba(50,50,50);
         height: 100vh;
     }
+    h1{
+        font-size: 3vh;
+    }
     input, button{
         width: 20vw;
     }
     label[for="username"], label[for="password"] {
         font-size: 2.2vw;
-        
+        top: 3vh;
+        left: 0;
     }
-    p{
-        bottom: 100%;
-        font-size: 1vw;
-        padding-left: 15px;
-        padding-right: 10px;
-        margin-right: 20px;
-        
+    p{  
+        position: absolute;
+        font-size: 1.5vw;
+        top:0;
+        color: red;
+        left:0vw;
     }
     #sign-up{
-        font-size: 1vw;
-        padding-left: 10px;
-        padding-right: 5px;
+        position:absolute;
+        font-size: 2vw;
+        top: 0;
+        right: 0;
     }
     #sign-up-container{
-        margin:0;
+        position: relative;
+        width: 20vw;
+    }
+    #username:focus + label[for="username"], #password:focus + label[for="password"]{
+        color: rgb(117, 192, 117);
+        font-size: 2.1vw;
+        font-weight: bold;
+        top: 2.1vh;
+        left: 1vw; 
+        z-index: 1111; 
+    }
+    #username:focus, #password:focus{
+        border: 3px solid lightgreen;
+    }
+    .layer2{
+        position:absolute;
+        width: 11.5vw;
+        height: 10px;
+        border-radius: 3px;
+        background-color: white;
+        z-index: 3;
+        top: 3vh;
+        left: 1.1vw;
     }
 
+}
+
+@media (max-width: 1500){
+    body{
+        background-image: none;
+    }
+    #login-container {
+        width: 100vw;
+        background-color: rgba(50,50,50);
+        height: 100vh;
+    }
+    h1{
+        font-size: 3vh;
+        color: blue;
+    }
+    input, button{
+        width: 20vw;
+    }
+    label[for="username"], label[for="password"] {
+        font-size: 2.2vw;
+        top: 3vh;
+        left: 0;
+    }
+    p{  
+        position: absolute;
+        font-size: 1.5vw;
+        top:0;
+        color: red;
+        left:0vw;
+    }
+    #sign-up{
+        position:absolute;
+        font-size: 2vw;
+        top: 0;
+        right: 0;
+    }
+    #sign-up-container{
+        position: relative;
+        width: 20vw;
+    }
+    #username:focus + label[for="username"], #password:focus + label[for="password"]{
+        color: rgb(117, 192, 117);
+        font-size: 2.1vw;
+        font-weight: bold;
+        top: 0vh;
+        left: 1vw; 
+        z-index: 1111; 
+    }
+    #username:focus, #password:focus{
+        border: 3px solid lightgreen;
+    }
+    .layer2{
+        position:absolute;
+        width: 11.5vw;
+        height: 10px;
+        border-radius: 3px;
+        background-color: white;
+        z-index: 3;
+        top: 3vh;
+        left: 1.1vw;
+    }
 }
 
 
