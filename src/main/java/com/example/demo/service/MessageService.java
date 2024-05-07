@@ -12,16 +12,16 @@ import java.util.List;
 public class MessageService {
     @Autowired
     private MessageRepository messageRepository;
-    private List<Message> listMessages(){
+    public List<Message> listMessages(){
         return messageRepository.findAll();
     }
-    private Message createMessage(Message message){
+    public Message createMessage(Message message){
         return messageRepository.save(message);
     }
-    private void deleteById(Integer id){
+    public void deleteById(Integer id){
         messageRepository.deleteById(id);
     }
-    private Message editMessageById(Message message, Integer id){
+    public Message editMessageById(Message message, Integer id){
         Message newMessage = messageRepository.findById(id).orElseGet(null);
         if(newMessage==null){
             newMessage.setBody(message.getBody());

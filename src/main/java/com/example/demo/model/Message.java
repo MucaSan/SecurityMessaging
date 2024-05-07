@@ -15,8 +15,8 @@ public class Message {
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name="idUser")
-    private Integer idUser;
+    @Column(name="id_user")
+    private Integer id_user;
     @Column(name="title")
     private String title;
     @Column(name="body")
@@ -37,10 +37,10 @@ public class Message {
         return body;
     }
     public Integer getIdUser() {
-        return idUser;
+        return id_user;
     }
     public void setIdUser(Integer idUser) {
-        this.idUser = idUser;
+        this.id_user = idUser;
     }
     public void setBody(String body) {
         this.body = body;
