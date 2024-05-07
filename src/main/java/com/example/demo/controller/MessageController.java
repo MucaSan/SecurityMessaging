@@ -9,4 +9,5 @@ public class MessageController {
     public String returnSomething(){
         return "WELCOME TO CRYPTOGRAPHY API!";
     }
+
 }

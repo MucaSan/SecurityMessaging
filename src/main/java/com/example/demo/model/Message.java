@@ -45,9 +45,9 @@ public class Message {
     public void setBody(String body) {
         this.body = body;
     }
-    public String toString(){
+    public String toString() {
         return ("TITLE: " + this.title + "\n" +
                 "BODY: " + this.body + "\n"
-                );
+        );
     }
 }
